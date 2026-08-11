@@ -8,7 +8,8 @@ How to publish as an organization Pages site:
 2. From this folder, initialize git, commit, and push to the repo you created (example commands below):
 
 ```bash
-cd /scratch/cii2002/SheComputes.github.io
+# change into the folder where you cloned or placed this site
+cd path/to/SheComputes.github.io
 git init
 git add .
 git commit -m "Initial SheComputes.github.io site"
