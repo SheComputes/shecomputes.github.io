@@ -23,5 +23,4 @@ git push -u origin main
    https://SheComputes.github.io
 
 Notes:
-- This scaffold intentionally does not include or link to external-hosted images or third-party site content. If you want to add images, place them in an `assets/` directory and update `index.html` to reference them locally.
-- If you want me to push these files to the repository for you, I can do so provided this machine has an authenticated `gh` or SSH access for your account.
+- Contact cii2002@nyu.edu if webpage is down.
