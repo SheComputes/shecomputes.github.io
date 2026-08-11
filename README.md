@@ -4,7 +4,7 @@ This folder contains a simple static site scaffold for the SheComputes organizat
 
 How to publish as an organization Pages site:
 
-1. In your GitHub account, create a new repository named `SheComputes.github.io` inside the `SheComputes` organization.
+1. In your GitHub account, create a new repository named `shecomputes.github.io` inside the `SheComputes` organization (you already created this).
 2. From this folder, initialize git, commit, and push to the repo you created (example commands below):
 
 ```bash
@@ -13,14 +13,14 @@ git init
 git add .
 git commit -m "Initial SheComputes.github.io site"
 git branch -M main
-git remote add origin git@github.com:SheComputes/SheComputes.github.io.git
+git remote add origin git@github.com:SheComputes/shecomputes.github.io.git
 git push -u origin main
 ```
 
-3. GitHub automatically serves `main` branch for a repository named `ORG.github.io` — the site will be available at:
+3. GitHub automatically serves the pages site for an organization repository named `shecomputes.github.io` from the `main` branch — the site will be available at:
 
    https://SheComputes.github.io
 
 Notes:
-- This scaffold links images and flyers directly from the Hoffmann Group site to preserve attribution. If you prefer to host assets locally, download them into `assets/` and update the `index.html` image paths.
-- If you want me to open a PR, push changes, or create the repo for you, I can help but will need access (or you can grant a temporary personal access token).
+- This scaffold intentionally does not include or link to external-hosted images or third-party site content. If you want to add images, place them in an `assets/` directory and update `index.html` to reference them locally.
+- If you want me to push these files to the repository for you, I can do so provided this machine has an authenticated `gh` or SSH access for your account.
