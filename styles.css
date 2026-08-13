@@ -45,9 +45,26 @@ a{color:var(--accent)}
 .photo-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center}
 .photo-grid figure:first-child img{object-position:center 42%}
 
+.wecompute-page{padding-bottom:2rem}
+.lessons-section{margin:0 0 3.5rem;padding:1.5rem;background:rgba(255,255,255,.58);border:1px solid rgba(111,66,193,.12);border-radius:18px;box-shadow:0 16px 45px rgba(97,63,173,.08)}
+.lessons-heading{margin-bottom:1.25rem}
+.lessons-heading h2{font-size:clamp(1.8rem,4vw,2.6rem);margin:.2rem 0 0;color:#35235d}
+.lesson-card{overflow:hidden;border:1px solid rgba(111,66,193,.14);border-radius:16px;background:#fff;box-shadow:0 10px 30px rgba(42,26,74,.1)}
+.lesson-copy{padding:1.35rem 1.5rem}
+.lesson-label{text-transform:uppercase;letter-spacing:.1em;font-size:.75rem;font-weight:800;color:var(--accent);margin:0 0 .25rem}
+.lesson-copy h3{font-size:clamp(1.5rem,3vw,2rem);margin:0 0 .45rem;color:#35235d}
+.lesson-copy p:not(.lesson-label){max-width:720px;line-height:1.6;color:#514c59}
+.lesson-button{display:inline-block;padding:.7rem 1rem;border-radius:9px;color:#fff;background:var(--accent);font-weight:700;text-decoration:none}
+.lesson-button:hover{background:#57329b}
+.lesson-button:focus-visible{outline:3px solid #e9a9d0;outline-offset:3px}
+.game-embed{width:100%;aspect-ratio:16/10;border-top:1px solid rgba(111,66,193,.14);background:#eee8f8}
+.game-embed iframe{display:block;width:100%;height:100%;border:0}
+
 @media(max-width:700px){
   .main-nav{flex-wrap:wrap}
   .event-section{padding:1rem}
   .photo-grid{grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem}
+  .lessons-section{padding:1rem}
+  .game-embed{aspect-ratio:3/4}
 }
 @media(min-width:900px){.site-header{padding:3rem 1rem}}
