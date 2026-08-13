@@ -40,6 +40,19 @@ a{color:var(--accent)}
 .event-heading{max-width:720px;margin-bottom:1.25rem}
 .event-heading h2{font-size:clamp(1.7rem,4vw,2.4rem);color:var(--accent);margin:0 0 .45rem}
 .event-heading p{line-height:1.6;color:#514c59;margin:0}
+.events-calendar{margin:0 0 3rem}
+.event-year{display:grid;grid-template-columns:90px 1fr;gap:1.25rem;margin-top:1.5rem}
+.event-year>h3{position:sticky;top:1rem;align-self:start;margin:0;color:var(--accent);font-size:1.5rem}
+.event-list{display:grid;gap:1rem}
+.event-card{padding:1.15rem 1.25rem;border:1px solid rgba(111,66,193,.12);border-left:5px solid var(--accent);border-radius:12px;background:#fff;box-shadow:0 8px 24px rgba(42,26,74,.08)}
+.event-card h4{margin:.15rem 0 .35rem;color:#35235d;font-size:1.15rem}
+.event-card>p:not(.event-date):not(.event-links){margin:.2rem 0;color:#514c59;line-height:1.55}
+.event-date{margin:0;color:var(--accent);font-size:.82rem;font-weight:750}
+.event-links{display:flex;flex-wrap:wrap;gap:.55rem;margin:.8rem 0 0}
+.event-links a{padding:.35rem .65rem;border-radius:7px;background:#eee7fb;font-size:.86rem;font-weight:700;text-decoration:none}
+.event-links a:hover{background:#dfd2f5}
+.section-divider{display:flex;align-items:center;gap:1rem;margin:3.5rem 0 2rem;color:#675b78;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.section-divider::before,.section-divider::after{content:"";height:1px;flex:1;background:rgba(111,66,193,.2)}
 .photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;align-items:start}
 .photo-grid figure{margin:0;overflow:hidden;border-radius:12px;background:#fff;box-shadow:0 8px 24px rgba(42,26,74,.12)}
 .photo-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center}
@@ -68,6 +81,8 @@ a{color:var(--accent)}
 @media(max-width:700px){
   .main-nav{flex-wrap:wrap}
   .event-section{padding:1rem}
+  .event-year{grid-template-columns:1fr;gap:.6rem}
+  .event-year>h3{position:static}
   .photo-grid{grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem}
   .lessons-section{padding:1rem}
   .game-embed{aspect-ratio:3/4}
