@@ -11,9 +11,10 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; col
 .site-top{display:flex;flex-direction:column;gap:.4rem}
 .site-header h1{margin:0;font-size:2.1rem;color:#fff}
 .tagline{color:rgba(255,255,255,0.9);margin-top:.25rem}
-.header-intro{display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
-.site-logo{display:block;width:clamp(96px,14vw,150px);height:110px;object-fit:contain;flex:0 0 auto}
-.affiliation{margin:0;color:rgba(255,255,255,.82);font-size:.9rem;font-weight:650;letter-spacing:.02em}
+.header-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem}
+.site-identity{display:flex;flex:0 0 145px;flex-direction:column;align-items:center;margin-top:-1rem;text-align:center}
+.site-logo{display:block;width:90px;height:72px;object-fit:contain}
+.affiliation{max-width:145px;margin:.15rem 0 0;color:rgba(255,255,255,.82);font-size:.72rem;font-weight:650;line-height:1.3;letter-spacing:.02em}
 
 .main-nav{display:flex;gap:0.5rem;margin-top:1rem}
 .main-nav a{color:rgba(255,255,255,0.95);text-decoration:none;padding:.45rem .7rem;border-radius:8px;font-weight:600}
@@ -82,8 +83,10 @@ a{color:var(--accent)}
 .game-embed iframe{display:block;width:100%;height:100%;border:0}
 
 @media(max-width:700px){
-  .header-intro{align-items:flex-start;gap:.75rem}
-  .site-logo{width:88px;height:76px}
+  .header-intro{gap:.75rem}
+  .site-identity{flex-basis:105px;margin-top:-.5rem}
+  .site-logo{width:68px;height:56px}
+  .affiliation{max-width:105px;font-size:.64rem}
   .main-nav{flex-wrap:wrap}
   .event-section{padding:1rem}
   .event-year{grid-template-columns:1fr;gap:.6rem}
