@@ -7,16 +7,10 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header site-header-main">
-    <div class="header-intro">
-      <div class="site-top">
-        <h1>SheComputes</h1>
-        <p class="tagline">Mentorship, community, and networking for women-identifying computational scientists.</p>
-      </div>
-      <div class="site-identity">
-        <img class="site-logo" src="shecomputes_jpg/shecomputes_logo.avif" alt="SheComputes logo">
-        <p class="affiliation">A New York University community initiative</p>
-      </div>
+  <header class="site-header">
+    <div class="site-top">
+      <h1>SheComputes</h1>
+      <p class="tagline">Mentorship, community, and networking for women-identifying computational scientists.</p>
     </div>
     <nav class="main-nav" aria-label="Main navigation">
       <a href="index.html" aria-current="page">Home</a>
@@ -26,16 +20,25 @@
     </nav>
   </header>
 
-  <main class="container">
-    <section id="welcome">
+  <main class="container home-page">
+    <section id="welcome" class="page-intro home-welcome">
+      <p class="eyebrow">Community · Mentorship · Science</p>
       <h2>Welcome</h2>
+      <div class="welcome-identity">
+        <img class="welcome-logo" src="shecomputes_jpg/shecomputes_logo.avif" alt="SheComputes logo">
+        <p>A New York University community initiative</p>
+      </div>
       <p>SheComputes is a community initiative at New York University focused on creating an empowering space for women-identifying theoretical and computational scientists. We host guest speakers, professional development, social events, and outreach activities.</p>
-      <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdj1xtl8b0KCa3e3ROJGKs20845v6IA1tAZiWaAnjcqQS9X-w/viewform" target="_blank" rel="noopener noreferrer">Join the SheComputes mailing list</a> to receive news, event announcements, and other updates.</p>
+      <p><a class="home-action" href="https://docs.google.com/forms/d/e/1FAIpQLSdj1xtl8b0KCa3e3ROJGKs20845v6IA1tAZiWaAnjcqQS9X-w/viewform" target="_blank" rel="noopener noreferrer">Join the SheComputes mailing list</a></p>
     </section>
 
-    <section id="board">
-      <h2>Meet the Board</h2>
-      <p>SheComputes is led by student organizers and faculty advisors. Below is a list of current board members and their roles. For general inquiries, please use the organization's contact channels.</p>
+    <div class="section-divider" aria-hidden="true"><span>Our community</span></div>
+
+    <section id="board" class="home-section">
+      <div class="event-heading">
+        <h2>Meet the Board</h2>
+        <p>SheComputes is led by student organizers and faculty advisors. Meet the people building our community.</p>
+      </div>
 
       <div class="board-grid">
         <div class="board-card">
